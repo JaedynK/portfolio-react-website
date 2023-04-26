@@ -23,6 +23,14 @@ justify-content: center;
 font-family: 'Lato', monospace;
 }
 
+.aboutPage{
+color: darkgrey;
+margin: 1rem auto;
+padding: 1rem;
+justify-content: center;
+font-family: 'Lato', monospace;
+}
+
 .image-container {
   width: 20rem;
   height: 20rem;
@@ -37,6 +45,44 @@ font-family: 'Lato', monospace;
 }
 
 .skillContainer{
-background-color:rgb(143, 166, 190);
+padding: 2rem;
+overflow: hidden;
+
+}
+
+.rotate {
+  animation: rotation 100s infinite linear;
+  padding: 2rem
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(380deg);
+  } 
+ }
+
+.allRotate {
+  animation: all-rotate 100s infinite linear;
+}
+
+@keyframes all-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-380deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .skillContainer {
+    max-width: 100%;
+  }
+  .allRotate {
+    animation: none;
+  }
 }
 

@@ -22,8 +22,8 @@ function App() {
   return (
     <div>
       <HomePage />
-      <AboutPage />
       <ProjectPage />
+      <AboutPage />
       {/* <div className="card">
       </div> */}
     </div>
